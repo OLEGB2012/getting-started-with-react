@@ -1,0 +1,37 @@
+Проект, созданный на основе статьи по введению в React https://www.taniarascia.com/getting-started-with-react/.
+
+0) Создать проект:
+ > npx create-react-app 00.getting-started-with-react --use-npm &&
+   cd 00.getting-started-with-react &&
+   npm start
+
+1) В папке /src удаляем все файлы. Заново создаем следующие (или оставляем те, что есть, но предварительно чистим их):
+ > index.css - вставляем в него содержимое из https://taniarascia.github.io/primitive/css/main.css (минималистичный UI-фреймворк Primitive UI)
+ > index.js - приводим к виду "Привет, Мир!"
+  import React, {Component} from 'react'
+  import ReactDOM from 'react-dom'
+  import './index.css'
+
+  class App extends Component {
+    render() {
+      return (
+        <div className="App">
+          <h1>Hello, React!</h1>
+        </div>
+      )
+    }
+  }
+  ReactDOM.render(<App />, document.getElementById('root'))
+
+2) Фиксим изменнения
+ > git add .
+ > git commit -am "Initial setup"
+
+3) Создать репозиторий в личном Github-аккаунте:
+ > https://github.com/OLEGB2012/getting-started-with-react.git
+
+4) Связь локальный и удаленный репы:
+ > git remote add origin https://github.com/OLEGB2012/getting-started-with-react.git
+
+5) Публикуем начальный коммит:
+ > git push -u origin master
