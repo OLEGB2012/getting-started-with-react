@@ -23,7 +23,7 @@
   }
   ReactDOM.render(<App />, document.getElementById('root'))
 
-2) Фиксим изменнения
+2) Фиксим изменения
  > git add .
  > git commit -am "Initial setup"
 
